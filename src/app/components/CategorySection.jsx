@@ -1,10 +1,11 @@
+
 'use client';
 import Image from 'next/image';
 import listings from '../data/listings';
 
 const CategorySection = () => {
   return (
-    <div className="space-y-12">
+    <div className="space-y-2">
       {Object.entries(listings).map(([category, items]) => (
         <section key={category}>
           <h2 className="text-2xl font-bold mb-4 capitalize">{category}</h2>
@@ -18,19 +19,30 @@ const CategorySection = () => {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    width={250}
+                    width={300}
                     height={150}
                     className="object-cover rounded-lg"
                   />
+            
                   <span className="absolute top-2 right-2 bg-blue-600 text-white px-2 py-1 rounded text-xs">
                     {item.badge}
                   </span>
+         
+                  <span className="absolute bottom-2 left-2 bg-gray-300 text-black px-2 py-1 rounded text-xs">
+                    Deposit: {item.deposit}
+                  </span>
                 </div>
-                <h3 className="mt-2 font-semibold">{item.title}</h3>
-                <p>Rs {item.price}/day</p>
-                <p className="text-sm text-gray-600">{item.location}</p>
-                <p className="text-sm text-gray-600">{item.distance}</p>
-                <p className="text-xs text-gray-500">Deposit: {item.deposit}</p>
+                <div className="flex justify-between items-center mt-2">
+                  <h3 className="font-semibold text-sm">{item.title}</h3>
+                  <p className="text-sm font-medium text-gray-800">Rs {item.price}/day</p>
+                </div>
+
+<span className="inline-flex items-center justify-between w-full text-sm text-black-600 py-1 mt-2">
+  <span className="flex items-center gap-1">
+     {item.location}
+  </span>
+  <span className="text-xs text-gray-500">{item.distance}</span>
+</span>
               </div>
             ))}
           </div>

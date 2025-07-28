@@ -24,7 +24,7 @@ const listings = {
       location: "DHA Phase 6, Karachi",
       distance: "7.2 km away",
       image: "/assests/property1.png",
-      badge: "New",
+      badge: "Featured",
       deposit: "1.2 lac"
     },
     {
@@ -33,7 +33,7 @@ const listings = {
       location: "PECHS Block 2, Karachi",
       distance: "3.8 km away",
       image: "/assests/property2.png",
-      badge: "Premium",
+      badge: "Featured",
       deposit: "2 lac"
     },
     {
@@ -42,7 +42,7 @@ const listings = {
       location: "North Nazimabad, Karachi",
       distance: "9.4 km away",
       image: "/assests/property1.png",
-      badge: "Budget",
+      badge: "Featured",
       deposit: "80k"
     }
   ],
@@ -71,7 +71,7 @@ const listings = {
       location: "Bahadurabad, Karachi",
       distance: "4.2 km away",
       image: "/assests/car1.png",
-      badge: "Premium",
+      badge: "Featured",
       deposit: "1.8 lac"
     },
     {
@@ -80,7 +80,7 @@ const listings = {
       location: "Nazimabad, Karachi",
       distance: "6.1 km away",
       image: "/assests/car2.png",
-      badge: "Budget",
+      badge: "Featured",
       deposit: "1 lac"
     },
     {
@@ -89,7 +89,7 @@ const listings = {
       location: "DHA Phase 8, Karachi",
       distance: "10 km away",
       image: "/assests/car1.png",
-      badge: "New Arrival",
+      badge: "Featured",
       deposit: "2 lac"
     }
   ]

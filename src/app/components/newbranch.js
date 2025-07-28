@@ -15,14 +15,14 @@ const features = [
 
 const BranchSection = () => {
   return (
-    <section className="py-4 bg-white mt-2">
+    <section className="py-4 bg-white mt-2 ">
       <div className="container mx-auto px-2">
       
-        <div className="flex overflow-x-auto hide-scrollbar space-x-1">
+        <div className="flex overflow-x-auto hide-scrollbar ">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="min-w-[150px] flex-shrink-0 flex flex-col items-center text-center p-2"
+              className="min-w-[150px] flex-shrink-0 flex flex-col items-center text-center "
             >
               <div
                 className="w-20 h-20 rounded-full flex items-center justify-center mb-2"

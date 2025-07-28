@@ -13,13 +13,13 @@ const categories = [
 
 export default function RentCategories() {
   return (
-    <section className="px-2 sm:px-6 py-4 mb-2">
+    <section className=" sm:px-2 py-4 mb-2">
 
-      <div className="flex overflow-x-auto space-x-4 hide-scrollbar">
+      <div className="flex overflow-x-auto space-x-2 hide-scrollbar">
         {categories.map((item, index) => (
           <div
             key={index}
-            className="min-w-[180px] sm:min-w-[220px] md:min-w-[250px] bg-white rounded-xl shadow-md p-4 flex-shrink-0 flex flex-col items-center hover:scale-105 transition-transform"
+            className="min-w-[180px] sm:min-w-[220px] md:min-w-[250px] bg-white rounded-xl shadow-md p-2 flex-shrink-0 flex flex-col items-center hover:scale-105 transition-transform"
           >
             <Image
               src={item.image}
@@ -35,5 +35,6 @@ export default function RentCategories() {
         ))}
       </div>
     </section>
+    
   );
 }

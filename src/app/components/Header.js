@@ -8,7 +8,7 @@ export default function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <header className="w-full px-4 sm:px-6 py-4 bg-white">
+    <header className="w-full px-2 sm:px-2 py-4 bg-white">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 ">
      
         <div className="flex items-center gap-2">
