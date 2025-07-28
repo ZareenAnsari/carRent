@@ -1,11 +1,13 @@
-import Header from './components/Header';
-import Add from './components/Add';
+
+import CarRental from './components/add';
+
 
 export default function Home() {
   return (
     <main>
-      <Header />
-      <Add />
+    
+      <CarRental />
+      
     </main>
   );
 }
