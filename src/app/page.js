@@ -1,10 +1,11 @@
-import Header from '@/components/Header';
+import Header from './components/Header';
+import Add from './components/Add';
 
 export default function Home() {
   return (
     <main>
       <Header />
-      <div className="p-6">Welcome to Rentle</div>
+      <Add />
     </main>
   );
 }
